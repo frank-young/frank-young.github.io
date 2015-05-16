@@ -1,68 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Frank Young : ">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Frank young</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/offcanvs.css" />
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<style type="text/css">
+			.jumbotron >h1 >span{color:deepskyblue}
+		</style>
+	</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<body>
+		<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
 
-    <title>Frank Young</title>
-  </head>
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 
-  <body>
+					<a href="##" class="navbar-brand">Frank Young</a>
+				</div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/frank-young">View on GitHub</a>
+				<div class="collapse navbar-collapse navbar-responsive-collapse " id="fy_nav">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="##">Home</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onclick="return false">My show<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="##" >CSS3</a>
+								</li>
+								<li><a href="##">Sass</a>
+								</li>
+								<li><a href="##">jQuery</a>
+								</li>
+								<li><a href="##">Responsive</a>
+								</li>
+							</ul>
+						</li>
+						<li ><a href="test.html">About Me</a>
+						</li>
+						<li><a href="##">Contact</a>
 
-          <h1 id="project_title">Frank Young</h1>
-          <h2 id="project_tagline"></h2>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
 
-        </header>
-    </div>
+			<div class="row row-offcanvas row-offcanvas-right">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-frank-young-website" class="anchor" href="#welcome-to-frank-young-website" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to <a href="http://frank-young.github.io/">Frank Young website</a>.</h3>
+				<div class="col-xs-12 col-sm-9">
+					<p class="pull-right visible-xs">
+						<button type="button" class="btn btn-info btn-xs" data-toggle="offcanvas">Toggle nav</button>
+					</p>
+					<div class="jumbotron">
+						<h1>About <span>Me</span></h1>
+						<p>I am Frank Young</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 blog-main">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+							<div class="blog-post">
+								<h2 class="blog-post-title">Sample blog post</h2>
+								<p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a>
+								</p>
 
-<p>``
-$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages</p>
+								<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+								<hr>
 
-<pre><code>
-If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
+								<blockquote>
+									<p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								</blockquote>
 
-### Designer Templates
-We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.
+								<h2 class="blog-post-title">Sample blog post</h2>
+								<p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a>
+								</p>
+								<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 
-### Rather Drive Stick?
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
+							</div>
+							<!-- /.blog-post -->
 
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `&lt;a&gt;` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+							<div class="blog-post">
+								<h2 class="blog-post-title">Another blog post</h2>
+								<p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a>
+								</p>
 
-### Support or Contact
-Having trouble with Pages? Check out the documentation at https://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
-</code></pre>
-      </section>
-    </div>
+								<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur
+									purus sit amet fermentum.</p>
+								<blockquote>
+									<p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								</blockquote>
+								<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+								<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+							</div>
+							<!-- /.blog-post -->
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+							<div class="blog-post">
+								<h2 class="blog-post-title">New feature</h2>
+								<p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a>
+								</p>
 
-    
+								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+									nibh, ut fermentum massa justo sit amet risus.</p>
+								<ul>
+									<li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+									<li>Donec id elit non mi porta gravida at eget metus.</li>
+									<li>Nulla vitae elit libero, a pharetra augue.</li>
+								</ul>
+								<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+								<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+							</div>
+							<!-- /.blog-post -->
 
-  </body>
+							<nav>
+								<ul class="pager">
+									<li><a href="#">Previous</a>
+									</li>
+									<li><a href="#">Next</a>
+									</li>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+					<!--/row-->
+				</div>
+				<!--/.col-xs-12.col-sm-9-->
+
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+					<div class="list-group">
+						<a href="#" class="list-group-item active">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item ">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+
+					</div>
+				</div>
+				<!--/.sidebar-offcanvas-->
+			</div>
+			<!--/row-->
+
+			<hr>
+
+			<footer>
+				<p>© Frank Young 2014 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<abbr title="E-mail">E-amil</abbr> : <a href="mailto:#">yangjunalns@qq.com</a> </p>
+			</footer>
+
+		</div>
+
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+		</script>
+		 <script>
+  $(function(){
+    $("ul li ").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+  });
+  </script>
+	</body>
+
 </html>
