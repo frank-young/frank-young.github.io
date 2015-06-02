@@ -1,0 +1,346 @@
+<!--php header-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 101 Template</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <style type="text/css">
+body{padding-top: 50px;}
+.btn-img{
+    color: #fff;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff;
+}
+.btn-img:hover,.btn-img:focus,.btn-img:active{
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  text-decoration: none;
+}
+  #btn{z-index: 10000; width: 50px;height: 50px;position: fixed;right: 10px;top:85%;padding: 9px;font-size: 30px;border-radius: 50%;background-color: rgba(0,0,0,0.2);color: #fff;-webkit-transition:color 0.3s; /* Safari */
+          transition:color 0.3s;}
+  #btn:hover{padding: 9px;font-size: 30px;border-radius: 50%;background-color: rgba(0,0,0,0.3);color: #fff;text-decoration: none;color: skyblue;}
+.row>div{min-height: 350px;}
+</style>
+</head>
+<body>
+
+
+  <!-- nva start -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" >
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">
+              Link
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              Dropdown
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">One more separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search"></div>
+          <button type="submit" class="btn btn-info glyphicon glyphicon-search"></button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#" data-toggle="modal" data-target="#mymodal-login">登录</a>
+          </li>
+          <li>
+            <a href="#"  href="#" data-toggle="modal" data-target="#mymodal-reg">注册</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+      <!-- /.container-fluid --> </div>
+  </nav>
+
+  <!-- nav stop -->
+
+  <!--php header-->
+  <!-- 轮换图 start-->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/01.jpg" alt="...">
+        <div class="carousel-caption">
+          <h1>Example headline.</h1>
+          <p>
+            Note: If you're viewing this page via a file:// URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+          </p>
+          <p>
+            <a class="btn-lg btn-img" href="#" role="button">more</a>
+
+          </p>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- 轮换图 stop-->
+  <!-- 内容 start -->
+  <div class="container">
+    <div class="row">
+           <div class="col-sm-6 col-md-4">
+        <h2>谷歌I/O黑科技：触摸屏搬到牛仔布上</h2>
+        <p>
+          IT之家讯 在每年的谷歌I/O大会上，我们总是能见到一些新奇的玩意儿，很多要归功于谷歌的ATAP研发部门。在今年的I/O大会展区中，有两样东西也是黑科技般的存在，那就是Project Jacquard和Project Soli。         </p>
+        <p>
+          <a class="btn btn-default" href="article.php?id=7" role="button">详情 »</a>
+        </p>
+      </div>
+              <div class="col-sm-6 col-md-4">
+        <h2>IT资讯</h2>
+        <p>
+          5月29日消息，彭博社网站今天发表文章称，谷歌在周四召开的2015年谷歌I/O开发者大会推出的“Now on Tap ”新功能，将对该公司未来有重大影响。多年来，由于移动应用的崛起及其相对独立的用户体验，谷歌目睹了其核心产品——搜索——的重要性正逐步下滑。用户正在为越来越多的应用所可吸引，这些应用没有与搜索进行捆绑或不需要经常使用互联网上的搜索服务。其结果是，谷歌对消费者上网习惯、兴趣和需要的掌控正面临下降的风险。         </p>
+        <p>
+          <a class="btn btn-default" href="article.php?id=8" role="button">详情 »</a>
+        </p>
+      </div>
+              <div class="col-sm-6 col-md-4">
+        <h2>Android M大彩蛋</h2>
+        <p>
+          IT之家讯 今日，Android M开发者预览版的SDK包已经开始提供下载，手持Nexus 5、Nexus 6等设备的用户可以刷机了。按照惯例，每一个安卓系统都会有彩蛋公布，Android M自然也不会例外。         </p>
+        <p>
+          <a class="btn btn-default" href="article.php?id=10" role="button">详情 »</a>
+        </p>
+      </div>
+              <div class="col-sm-6 col-md-4">
+        <h2>廉价也疯狂：除了Cardboard，还有这些硬纸板产品</h2>
+        <p>
+          谷歌I/O开发者大会上，原本不该很起眼，甚至可以说是非常简陋的Google Cardboard第二代虚拟现实眼镜却引起了不少人的关注，甚至还有各种像模像样的上手评测文，分析这个所谓用硬纸板造的“第二代”到底有什么进步。其实，在科技领域材料日新月异的今天，硬纸板产品以其廉价耐用易组装这样的独特魅力一直受到各类爱好者的关注。趁着这别致的“谷歌纸板”发布，我们来盘点一下那些有趣的硬纸板产品：         </p>
+        <p>
+          <a class="btn btn-default" href="article.php?id=13" role="button">详情 »</a>
+        </p>
+      </div>
+              <div class="col-sm-6 col-md-4">
+        <h2>2015年全球平板销量不景气：大屏幕才是真爱</h2>
+        <p>
+          市场调研机构IDC公布的数据显示，2015年全球平板电脑及平板电脑/笔记本“二合一”设备市场仍将继续萎缩。
+虽然苹果和Android厂商并没有放弃平板电脑，不过该市场的滑坡似乎无法避免。《全球季度平板电脑追踪》报告预测，今年全球平板电脑和平板电脑/笔记本“二合一”设备的总销量将达2.218亿台，较去年同期下降3.8%。         </p>
+        <p>
+          <a class="btn btn-default" href="article.php?id=14" role="button">详情 »</a>
+        </p>
+      </div>
+              <div class="col-sm-6 col-md-4">
+        <h2>NVIDIA那个备受争议的Gameworks，要来安卓了</h2>
+        <p>
+          NVIDIA的Gameworks开发工具对游戏开发者来说是个极好的工具，但Gameworks所到之处也往往让游戏陷入巨大的争议中去，《巫师3》就是最近的一个例子。现在的Gameworks还只是PC平台的，但NVIDIA已经宣布把Gameworks带到安卓平台上去了，名字叫做Androidworks，估计以后安卓平台游戏圈也不太平静了。         </p>
+        <p>
+          <a class="btn btn-default" href="article.php?id=15" role="button">详情 »</a>
+        </p>
+      </div>
+            </div>
+
+  </div>
+  <!-- 内容 stop -->
+  <!--php footer-->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted text-left">
+        Copy Right By Frank Young.
+        <a href="http://frank-young.github.io" data-toggle="tooltip" data-placement="right" title="我的个人博客">frank-young.github.io</a>
+      </p>
+    </div>
+  </footer>
+  <!-- login in alert start-->
+  <!-- 模态弹出窗内容 -->
+  <div class="modal  fade" id="mymodal-login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title">登录</h4>
+        </div>
+        <div class="modal-body">
+
+          <form class="form-signin" action="doCaptcha.php" method="post">
+            <h2 class="form-signin-heading">请登录</h2>
+            <label for="inputEmail" class="sr-only">用户名</label>
+
+            <input type="text"  class="form-control" placeholder="用户名" required autofocus>
+            <label for="inputPassword" class="sr-only">密码</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+
+            <div class="captcha" >
+              <label class="sr-only">验证码</label>
+              <input id="captcha_in" type="text" class="form-control" placeholder="验证码" required></div>
+            <div class="captcha">
+              <img id="captcha_img" src="./captcha.php?r=<?php echo rand(); ?>
+              " alt="验证码" />
+              <a href="javascript:;" onclick="captchaChange()">换一个</a>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me">Remember me</label>
+            </div>
+            <button class="btn btn-lg btn-info btn-block" type="submit">登录</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login in alert stop -->
+  <!-- 注册 alert start-->
+  <!-- 模态弹出窗内容 -->
+  <div class="modal  fade" id="mymodal-reg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title">注册</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal form-admin">
+          <div class="form-group">
+            <label for="inputUser" class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="inputUser" placeholder="用户名">
+              <span id="helpBlock" class="help-block">请输入用户名</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword1" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-6">
+              <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+              <span id="helpBlock" class="help-block">请输入密码</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword2" class="col-sm-2 control-label">再次输入密码</label>
+            <div class="col-sm-6">
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              <span id="helpBlock" class="help-block">请再次输入密码</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail1" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" id="inputEmail1" placeholder="邮箱">
+              <span id="helpBlock" class="help-block">请输入正确的邮箱</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">性别</label>
+           <div class="radio col-sm-6">
+             <label>
+               <input type="radio" name="sex" id="sex1" value="option1" checked>男
+             </label>
+      
+             <label>
+               <input type="radio" name="sex" id="sex1" value="option2">女
+             </label>
+           </div>
+            
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-5">
+              <button type="submit" class="btn btn-info">注册</button>
+            </div>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="glyphicon glyphicon-triangle-top" href="javascript:;" id="btn" title="回到顶部"></a>
+  <!-- 注册 alert stop -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(function(){//设置点击后添加active
+      $("ul li ").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    });
+      $(function () {
+       $('[data-toggle="tooltip"]').tooltip();
+       $('[data-toggle="popover"]').popover();
+    });
+      
+    </script>
+</body>
+</html>
+<!--php footer-->

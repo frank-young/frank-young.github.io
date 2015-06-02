@@ -1,0 +1,86 @@
+/*	common css
+*---------------------------------------------------------------
+*/
+.box{width: 960px;  overflow: hidden;box-shadow: 0 0 10px 5px rgba(0,0,0,0.4); padding: 10px 20px;}
+nav{width: 100%;background-color: #222; height: 70px;position: fixed; top: 0px; left: 0px; box-shadow: 0 0 5px #000;}
+.top{width: 960px; padding-left:20px; overflow: hidden;}
+.top h1{font-size: 25px; color: #ff6600;margin-top: 15px;}
+.nav{ margin-left: 30px;  margin-top: 30px;}
+.nav li{display: inline-block; float: left; margin-left: 30px;}
+.nav li a{ color: #999;}
+.nav li a:hover{ color: #fff;}
+.link-right{border:2px solid #ff6600;padding:10px; border-radius:80px; margin-top: 15px;}
+.top>a{color: #999;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition:background-color 0.5s;
+	   -moz-transition:background-color 10.5;
+	    -ms-transition:background-color 0.5s;
+		 -o-transition:background-color 0.5s;
+			transition:background-color 0.5s;
+}
+.top>a:hover{color: #fff; background-color: #ff6600;}
+footer{width: 100%;background-color: #222; height: 50px; margin-bottom: 0px; padding-top: 25px;}
+.foot{ width: 960px;  color:#888;}
+.foot a{ color:#ddd;}
+.boxShow{box-shadow: 0  0 5px 2px rgba(0,0,0,0.3)}
+
+.con{width: 960px;  overflow: hidden;}
+.con_right{width: 200px; height: 300px;position: fixed; }
+ .con_left{ width: 650px;  min-height:800px;}
+
+/*	弹出层
+*---------------------------------------------------------------
+*/
+.up{position:absolute; width:100%;background-color:rgba(0,0,0,0.5);top:0;left:0; visibility: hidden;}
+.show{position:fixed;width:550px;height:270px;top:100px; left:30%; background-color: #fff;visibility: hidden;border-radius: 5px; padding:70px 20px 40px  20px; box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);}
+.show h3{display: inline-block;position: absolute;top: 20px; left: 40px; }
+.close{display: inline-block;position: absolute;top: 0px; right: 0px;}
+.bta{display: inline-block; width: 50px; text-align: center; height:30px;line-height: 30px;border-radius: 5px;cursor: pointer;}
+.show a:hover{color:#fff !important;background-color: #ff3300 !important}
+
+
+/*  login.html
+*---------------------------------------------------------------
+*/
+.sub-a >input{display: inline-block; width: 50px; text-align: center; height:30px;line-height: 20px;border-radius: 5px;}
+.sub-a >input:hover{color:#fff !important;background-color: #ff3300 !important;}
+
+.wraing{visibility:hidden; margin-left: 10px; font-size: 12px;}
+
+
+/*	index.html
+*------------------------------------------------------------------
+*/
+.article { border-bottom: 2px dotted skyblue;}
+.con_left div:last-child{ border-bottom:0;}
+.article h2{ font-size: 18px; }
+.article p{text-indent:2em;}
+
+.links{height: 40px;background-color: #222; border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.links h3 { margin-left: 20px; padding-top: 10px;}
+.nav_right{
+	list-style: none;
+	line-height: 30px;
+ }
+
+
+/*	user.html 
+*------------------------------------------------------------------
+*/
+.face{width: 150px; height: 150px;  border-radius: 100px; margin-top: 20px; }
+.addarticle{position:fixed;width:700px;height:400px;top:80px; left:20%; background-color: #fff;visibility: hidden;border-radius: 5px; padding:70px 20px 40px  20px; box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);}
+.addarticle h3{display: inline-block;position: absolute;top: 20px; left: 40px; }
+.addarticle a:hover{color:#fff !important;background-color: #ff3300 !important;}
+.addSuccess input:hover{color:#fff !important;background-color: #ff3300 !important;}
+
+.article > a{ color: #2783CE;display:inline-block; float: right;margin-right: 30px;}
+.article > a:hover{ color: skyblue;}
+
+/*	备份css
+*------------------------------------------------------------------
+*/
+.con_right img{width: 150px; height: 150px; border-radius: 100px;}
+.con_form{ padding: 15px; width: 400px;}
+.tex textarea{margin-bottom: 20px;font-size: 14px;color:#666;line-height: inherit;border-radius: 5px;border: 1px solid #ccc;padding-left:10px;padding: 5px;}
+.oth{ width: 400px;}

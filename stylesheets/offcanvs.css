@@ -59,8 +59,22 @@ footer {
 }
 
 
-/*
+/*    jumbotron
  * --------------------------------------------------
  * */
+.jumbotron >h1 >span{
+  color:deepskyblue;
+}
+.navbar-header span{
+  color:deepskyblue;
+}
+@media screen and (min-width: 767px){
+  #navcon{ 
+    margin-left: 50px;
+  }
+}
 
-
+/*  dome img:hover;
+ * --------------------------------------------------
+ * */
+ .border_hover a img:hover{border:1px solid #337AB7; box-shadow: 0 0 5px #337AB7;}
