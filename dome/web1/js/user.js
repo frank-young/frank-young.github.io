@@ -7,12 +7,15 @@ window.onload =func1;
 *
 *==================================================
 */
+function $(id){
+	return document.getElementById(id);
+}
 function func1(){
-		var aph = document.getElementById('aph');
-		var close = document.getElementById('close');
+		var aph = $('aph');
+		var close = $('close');
 		var aphHeight =document.body.scrollHeight;
-		var showme = document.getElementById('showMe');
-		var tan = document.getElementById("tan");
+		var showme = $('showMe');
+		var tan = $("tan");
 	tan.onclick = function(){ 
 		addshow();
 		return false;
@@ -52,42 +55,33 @@ function func1(){
 *
 *==================================================
 */
-
-
-	var addArtic = document.getElementById("addArtic");
+	var addArtic = $("addArtic");
 	var input = addArtic.getElementsByTagName("input");
 	var textarea = addArtic.getElementsByTagName("textarea");
 	var title = input[0].value;
 	var author = input[1].value;
 	var description = textarea[0].value;
 	var content = textarea[1].value;
-	var addall = document.getElementById("addAll");
-
-	var success = document.getElementById("success");
+	var addall = $("addAll");
+	var success = $("success");
 	success.onclick = function(){ 
-
 		add(input[0].value,textarea[0].value);
-		
 	}
-
 	function add(title,description){ 
-	
-		if(title != ""&&description !=""){
-			
+		if(title != ""&&description !=""){	
 			var h2node = document.createElement("h2");
 			var h2textnode = document.createTextNode(title);
 			h2node.appendChild(h2textnode);
 			addall.appendChild(h2node);
-	
-		var pnode = document.createElement("p");
-		var ptextnode = document.createTextNode(description);
-		pnode.appendChild(ptextnode);
-		addall.appendChild(pnode);
-		addbt();//增加删除，修改按钮
-		alert('发布文章成功！');
-		var addclo = new func1();
-		addclo.addClose();	
-		cls();
+			var pnode = document.createElement("p");
+			var ptextnode = document.createTextNode(description);
+			pnode.appendChild(ptextnode);
+			addall.appendChild(pnode);
+			addbt();//增加删除，修改按钮
+			alert('发布文章成功！');
+			var addclo = new func1();
+			addclo.addClose();	
+			cls();
 		
 		}else{
 			alert("标题或描述不能为空！")
@@ -100,7 +94,7 @@ function remove1(a){
 	//element.removeChild()
 	//var a = addall.getElementsByTagName("a");
 	//a[1].onclick = function(){ 
-		//var h2 = document.getElementById("h2");
+		//var h2 = $("h2");
 		var p = a.previousSibling.previousSibling;
 		var h2=p.previousSibling.previousSibling;
 		var a2 =a.nextSibling.nextSibling;
@@ -117,10 +111,9 @@ function remove1(a){
 }
 //修改文章
 function re(b){ 
-
 	//var a = addall.getElementsByTagName("a");
 	//a[1].onclick = function(){ 
-		//var h2 = document.getElementById("p");
+		//var h2 = $("p");
 		var a1 = b.previousSibling.previousSibling;
 		var p1=a1.previousSibling.previousSibling;
 		var h21=p1.previousSibling.previousSibling;
@@ -130,12 +123,7 @@ function re(b){
 		//创建对象
 		var addclo = new func1();
 		var addsho =  addshow();
-
-		
-
-	
 	//}
-
 }
 
 
@@ -147,14 +135,12 @@ function addbt(){
 	remonode.setAttribute("href","#");
 	remonode.appendChild(remotextnode);
 	addall.appendChild(remonode);
-
 	var renode = document.createElement("a");
 	var retextnode = document.createTextNode("修改");
 	renode.setAttribute("onclick","re(this)");
 	renode.setAttribute("href","#");
 	renode.appendChild(retextnode);
 	addall.appendChild(renode);
-
 }
 
 //清空表单数据

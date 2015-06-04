@@ -5,7 +5,7 @@ h1,h2,h3,h4,h5,h6{margin:0px;font-family: '微软雅黑';font-size: 14px;color:#
 .fontBase{font-family: '微软雅黑';font-weight: normal; }
 .ffw{font-family: '微软雅黑'}
 .fcf{color: #fff !important;}
-.fcff6{color: #ff6600;}
+.fcff6{color: deepskyblue;}
 .fl{float: left;}
 .fr{float: right;}
 .margin20A{margin: 20px auto;}
@@ -14,6 +14,9 @@ h1,h2,h3,h4,h5,h6{margin:0px;font-family: '微软雅黑';font-size: 14px;color:#
 .mt20{margin-top: 20px;}
 .mt30{margin-top: 30px;}
 .mt90{margin-top: 90px;}
+.mb30{margin-bottom: 30px;}
+.mb50{margin-bottom: 50px;}
+.mb90{margin-bottom: 90px;}
 .mr10{margin-right: 10px;}
 .mr20{margin-right: 20px;}
 .mr40{margin-right: 40px;}
@@ -33,17 +36,20 @@ h1,h2,h3,h4,h5,h6{margin:0px;font-family: '微软雅黑';font-size: 14px;color:#
 .br50{border-radius: 50%;}
 
 .cb{clear: both;}
-.bt{ background-color: #ff6600; color: #fff; cursor: pointer;}
+.bt{ background-color: deepskyblue; color: #fff; cursor: pointer;}
 	
-input{margin-bottom: 20px;font-size: 14px;color:#222;line-height: inherit;border-radius: 3px;border: 1px solid #FF6600;padding-left:10px;padding: 5px;}
+input{margin-bottom: 20px;font-size: 14px;color:#222;line-height: inherit;border-radius: 3px;border: 1px solid deepskyblue;padding-left:10px;padding: 5px;-webkit-transition:box-shadow 0.25s;-o-transition:box-shadow 0.25s;-moz-transition:box-shadow 0.25s;transition:box-shadow 0.25s;}
 input:focus{line-height: inherit;border-radius: 3px;border: 1px solid #4D90FE;padding-left:10px;padding: 5px; box-shadow: 0 0 8px #4D90FE;}
-select{margin-bottom: 20px;font-size: 14px;color:#ff6600;line-height: inherit;border-radius: 5px;border: 1px solid #FF6600;padding-left:10px;padding: 5px;}
-textarea{margin-bottom: 20px;font-size: 14px;color:#666;border-radius: 5px;border: 1px solid #FF6600;padding-left:10px;padding: 5px; overflow-X:hidden; }
+select{margin-bottom: 20px;font-size: 14px;color:deepskyblue;line-height: inherit;border-radius: 5px;border: 1px solid deepskyblue;padding-left:10px;padding: 5px;}
+textarea{margin-bottom: 20px;font-size: 14px;color:#666;border-radius: 5px;border: 1px solid deepskyblue;padding-left:10px;padding: 5px; overflow-X:hidden;-webkit-transition:box-shadow 0.25s;-o-transition:box-shadow 0.25s;-moz-transition:box-shadow 0.25s;transition:box-shadow 0.25s;}
 textarea :focus{border-radius: 3px;border: 1px solid #4D90FE;padding-left:10px;padding: 5px; box-shadow: 0 0 8px #4D90FE;}
-
-a{color: #666;text-decoration: none;}
+input[type=submit]{background-color: deepskyblue;color: #fff;font-family: '微软雅黑'; cursor: pointer; border: 1px solid deepskyblue;-webkit-transition:background-color 0.25s;-o-transition:background-color 0.25s;-moz-transition:background-color 0.25s;transition:background-color 0.25s;}
+input[type=submit]:hover{background-color: skyblue;border: 1px solid skyblue;}
+input[type=button]{background-color: deepskyblue;color: #fff;font-family: '微软雅黑'; cursor: pointer; border: 1px solid deepskyblue;-webkit-transition:background-color 0.25s;-o-transition:background-color 0.25s;-moz-transition:background-color 0.25s;transition:background-color 0.25s;}
+input[type=button]:hover{background-color: skyblue;border: 1px solid skyblue;}
+a{color: #333;text-decoration: none;}
 a:link{text-decoration: none;}
 a:visited{text-decoration: none;}
-a:hover{color: #ff6600;display: text-decoration: none; }
+a:hover{color: deepskyblue;display: text-decoration: none; }
 a:active{text-decoration: none;}
 

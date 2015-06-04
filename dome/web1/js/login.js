@@ -3,7 +3,9 @@
 /*  	表单验证
 *=================================================================================
 */
-
+function $(id){
+	return document.getElementById(id);
+}
 	var ipt = document.getElementsByName("in");
 		 var name= ipt[0];
 		 var email = ipt[2];
@@ -189,9 +191,9 @@
 /*	弹出层
 *=================================================================================
 */
-	var aph = document.getElementById('aph');
-	var showme = document.getElementById('showMe');
-	var close = document.getElementById('close');
+	var aph = $('aph');
+	var showme = $('showMe');
+	var close = $('close');
 	var aphHeight =document.body.scrollHeight;
 
 	function show() {
