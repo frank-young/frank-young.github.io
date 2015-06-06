@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #333;
+}
+.box{
+	width: 800px;
+	height: 280px;
+	margin: 50px auto;
+	overflow:hidden;
+	position: relative;
+}
+.box .link{
+	width: 205px;
+	height: 280px;
+	display: inline-block;
+	margin: 0 20px;
+}
+.link .icon{
+	display: block;
+	width: 100%;
+	height: 190px;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	   -moz-transition: all 0.2s;
+			 -o-transition: all 0.2s;
+					transition: all 0.2s;
+}
+.link-miss .icon{
+	background: url(../images/mission.png) no-repeat center center ; /*设置center，图片可以居中对齐*/
+}
+.link-play .icon{
+	background: url(../images/play.png) no-repeat center center;
+}
+.link-touch .icon{
+	background: url(../images/touch.png) no-repeat center center;
+}
+.link .icon:hover{
+	-webkit-transform:rotate(360deg) scale(1.2);
+	   -moz-transform:rotate(360deg) scale(1.2);
+	    -ms-transform:rotate(360deg) scale(1.2);
+	     -o-transform:rotate(360deg) scale(1.2);
+					transform:rotate(360deg) scale(1.2);
+}
+.button{
+	display: block;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: #2dcb70;
+	font-family: Arial;
+	font-weight: bolder;
+	border: 2px solid rgba(255,255,255,0.6);
+	padding-left: 20px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-box-sizing:border-box;
+		 -moz-box-sizing:border-box;
+			-ms-box-sizing:border-box;
+			 -o-box-sizing:border-box;
+					box-sizing:border-box;/*去除盒子模型的padding和border*/
+	background: url(../images./allow.png) no-repeat 130px center;
+	-webkit-transition: all 0.2s ease-in;
+   	 -moz-transition: all 0.2s ease-in;
+		   -o-transition: all 0.2s ease-in;
+					transition: all 0.2s ease-in;
+}
+.button:hover{
+	border: 2px solid rgba(255,255,255,1);
+	background: url(../images./allow.png) no-repeat 140px center;
+}
+.button .line{
+	display: block;
+	position: absolute;
+	background: none;
+		-webkit-transition: all 0.2s ease-in;
+   	 -moz-transition: all 0.2s ease-in;
+		   -o-transition: all 0.2s ease-in;
+					transition: all 0.2s ease-in;
+}
+.button:hover .line{
+	background: #fff;
+}
+.button .line-top{
+	height: 2px;
+	width: 0px;
+	top: -2px;
+	left: -110%;
+}
+.button:hover .line-top{
+	width: 100%;
+	left: 0px;
+}
+.button .line-right{
+	width: 2px;
+	height: 0px;
+	top: -110%;
+	right: -2px;
+}
+.button:hover .line-right{
+	height: 100%;
+	top: -2px;
+}
+.button .line-left{
+	width: 2px;
+	height: 0px;
+	bottom: -110%;
+	left: -2px;
+}
+.button:hover .line-left{
+	height: 100%;
+	bottom: -2px;
+}
+.button .line-bottom{
+	width: 0px;
+	height: 2px;
+	right: -110%;
+	bottom: -2px;
+}
+.button:hover .line-bottom{
+	width: 100%;
+	right: -2px;
+}
+.tip{
+	position: absolute;
+	padding: 0px 14px;
+	height: 35px;
+	line-height: 35px;
+	background: #2dcb70;
+	color: #fff;
+	font-size: 18px;
+	margin: 0 auto;
+	top:100px;
+	-webkit-border-radius: 3px;
+		 -moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			 -o-border-radius: 3px;
+			 		border-radius: 3px;
+	opacity: 0;/*透明度*/
+}
+.tip em{
+	font-style: normal;
+}
+.tip span{
+	display: block;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	border: 8px solid transparent;
+	border-top-color: #2dcb70;/*朝下的三角形*/
+	position: absolute;
+	top: 34px;
+	left: 50%;
+	margin-left: -4px;
+}

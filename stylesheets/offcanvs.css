@@ -78,4 +78,15 @@ footer {
 /*  dome img:hover;
  * --------------------------------------------------
  * */
- .border_hover a img:hover{border:1px solid #337AB7; box-shadow: 0 0 5px #337AB7;}
+ @media screen and (max-width: 767px){
+   .border-hover {
+      margin-top: 30px;
+   }
+}
+ .border-hover a img:hover{
+    border:1px solid #337AB7;
+    box-shadow: 0 0 5px #337AB7;
+}
+.border-hover>div{
+    min-height: 500px;
+  }
