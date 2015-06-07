@@ -70,7 +70,7 @@ body{
 }
 .button:hover{
 	border: 2px solid rgba(255,255,255,1);
-	background: url(../images./allow.png) no-repeat 140px center;
+	background: url(../images/allow.png) no-repeat 140px center;
 }
 .button .line{
 	display: block;
