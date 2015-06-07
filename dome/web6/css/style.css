@@ -1,0 +1,204 @@
+/*Global*/
+html{
+	width: 100%;
+	height: 100%;
+	-webkit-text-size-adjust:none;
+	   -moz-text-size-adjust:none;
+	    -ms-text-size-adjust:none;
+	 	 -o-text-size-adjust:none;
+			text-size-adjust:none;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #47cfaf;
+	color: #74777b;
+	font-weight: 300;
+	font-size: 1.5em;
+	font-family: "Arail";
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a:link,a:visited,a:hover,a:active,a:focus{
+	text-decoration: none;
+	outline: none;
+}
+*,*:after,*:before{
+	/*前面和后面插入的内容不要影响盒子的大小*/
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		 -o-box-sizing:border-box;
+			box-sizing:border-box;
+
+}
+*:after,*:before{
+	display: block;
+	content: '';
+}
+*:after{
+	clear: both;
+}
+/*Navgaitor*/
+.nav{
+	width: 800px;
+	height: 300px;
+	margin:200px auto; 
+}
+.nav li{
+	display: inline-block;
+	margin: 0 1em;
+}
+.tooltip{
+	display: inline-block;
+	font-weight: 700;
+	color: rgba(0,0,0,0.3);
+	padding: 0.15em 0.25em 0;
+	position: relative;
+	z-index: 10;
+	-webkit-transition:all 0.3s;
+		 -moz-transition:all 0.3s;
+			-ms-transition:all 0.3s;
+			 -o-transition:all 0.3s;
+					transition:all 0.3s;
+}
+.tooltip:hover{
+	color: rgba(255,255,255,1);
+}
+.tooltip-content{
+	position: absolute;
+	z-index: 100;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #fff;
+	left: 50%;
+	margin-left: -40px;
+	bottom: 0;
+	bottom: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 80px;/*padding-top:25px;*/
+	color: #47cfaf;
+	opacity: 0;
+	-webkit-transition:all 0.3s;
+		 -moz-transition:all 0.3s;
+			-ms-transition:all 0.3s;
+			 -o-transition:all 0.3s;
+					transition:all 0.3s;
+}
+.tooltip-content:after{
+	display: block;
+	content: '';
+	width: 30px;
+	height: 20px;
+	background: #fff;
+	-webkit-clip-path:polygon(20% 0,80% 0,50% 100%);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -15px;
+	margin-top: -10px;
+}
+.tooltip .tooltip-content i{
+	opacity: 0;
+	-webkit-transition:all 0.3s;
+		 -moz-transition:all 0.3s;
+			-ms-transition:all 0.3s;
+			 -o-transition:all 0.3s;
+					transition:all 0.3s;
+}
+.tooltip-effect-1 .tooltip-content{
+	-webkit-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+		 -moz-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+			-ms-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+			 -o-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+					transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	-webkit-transform-origin:center bottom;
+		 -moz-transform-origin:center bottom;
+			-ms-transform-origin:center bottom;
+			 -o-transform-origin:center bottom;
+					transform-origin:center bottom;
+}
+.tooltip-effect-1 .tooltip-content i{
+	-webkit-transform:scale3d(0,0,1);
+		 -moz-transform:scale3d(0,0,1);
+			-ms-transform:scale3d(0,0,1);
+			 -o-transform:scale3d(0,0,1);
+					transform:scale3d(0,0,1);
+}
+.tooltip-effect-2 .tooltip-content{
+	-webkit-transform:translate3d(0,10px,0);
+		 -moz-transform:translate3d(0,10px,0);
+			-ms-transform:translate3d(0,10px,0);
+			 -o-transform:translate3d(0,10px,0);
+					transform:translate3d(0,10px,0);
+}
+.tooltip-effect-2 .tooltip-content i{
+	-webkit-transform:translate3d(0,10px,0);
+		 -moz-transform:translate3d(0,10px,0);
+			-ms-transform:translate3d(0,10px,0);
+			 -o-transform:translate3d(0,10px,0);
+					transform:translate3d(0,10px,0);
+}
+.tooltip-effect-3 .tooltip-content{
+	-webkit-transform: translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+		 -moz-transform: translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+			-ms-transform: translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+			 -o-transform: translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+					transform: translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+	-webkit-transform-origin:center bottom;
+		 -moz-transform-origin:center bottom;
+			-ms-transform-origin:center bottom;
+			 -o-transform-origin:center bottom;
+					transform-origin:center bottom;
+}
+.tooltip-effect-3 .tooltip-content i{
+	-webkit-transform:scale3d(0,0,1);
+		 -moz-transform:scale3d(0,0,1);
+			-ms-transform:scale3d(0,0,1);
+			 -o-transform:scale3d(0,0,1);
+					transform:scale3d(0,0,1);
+}
+.tooltip-effect-4 .tooltip-content{
+	-webkit-transform:translate3d(0,-10px,0);
+		 -moz-transform:translate3d(0,-10px,0);
+			-ms-transform:translate3d(0,-10px,0);
+			 -o-transform:translate3d(0,-10px,0);
+					transform:translate3d(0,-10px,0);
+}
+.tooltip-effect-4 .tooltip-content i{
+	-webkit-transform:translate3d(0,-10px,0);
+		 -moz-transform:translate3d(0,-10px,0);
+			-ms-transform:translate3d(0,-10px,0);
+			 -o-transform:translate3d(0,-10px,0);
+					transform:translate3d(0,-10px,0);
+}
+.tooltip-effect-5 .tooltip-content{
+	-webkit-transform:scale3d(0,0,1);
+		 -moz-transform:scale3d(0,0,1);
+			-ms-transform:scale3d(0,0,1);
+			 -o-transform:scale3d(0,0,1);
+					transform:scale3d(0,0,1);
+}
+.tooltip-effect-5 .tooltip-content i{
+	-webkit-transform:scale3d(0,0,1);
+		 -moz-transform:scale3d(0,0,1);
+			-ms-transform:scale3d(0,0,1);
+			 -o-transform:scale3d(0,0,1);
+					transform:scale3d(0,0,1);
+}
+.tooltip:hover .tooltip-content,
+.tooltip:hover .tooltip-content i{
+	opacity: 1;
+	-webkit-transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+		 -moz-transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+			-ms-transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+			 -o-transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+					transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+}
