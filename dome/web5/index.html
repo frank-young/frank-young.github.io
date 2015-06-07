@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3实现页面平滑过渡</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"></head>
+<body>
+	<div class="container">
+		<div class="st-container">
+			<!-- 利用radio判断导航是否被选中 -->
+			<!-- nav begin -->
+			<input type="radio" name="radio-set" checked="checked" id="st-control-1">
+			<a href="#st-panel-1">Serendipity</a>
+			<input type="radio" name="radio-set"  id="st-control-2">
+			<a href="#st-panel-2">Happiness</a>
+			<input type="radio" name="radio-set" id="st-control-3">
+			<a href="#st-panel-3">Tranquility</a>
+			<input type="radio" name="radio-set" id="st-control-4">
+			<a href="#st-panel-4">Positivity</a>
+			<input type="radio" name="radio-set"  id="st-control-5">
+			<a href="#st-panel-5">Passion</a>
+			<!-- nav end content begin-->
+			<div class="st-scroll">
+				<section class="st-panel" id="st-panel-1">
+					<div class="st-desc" data-icon="H"></div>
+					<h2>Serendipity</h2>
+					<p>Serendipity Happiness Tranquility Positivity Passion11111111111111111111111111111</p>
+				</section>
+				<section class="st-panel st-color" id="st-panel-2">
+					<div class="st-desc" data-icon="2"></div>
+					<h2>Serendipity</h2>
+					<p>Serendipity Happiness Tranquility Positivity Passion2222222222222222222222222222</p>
+				</section>
+				<section class="st-panel" id="st-panel-3">
+					<div class="st-desc" data-icon="B"></div>
+					<h2>Serendipity</h2>
+					<p>Serendipity Happiness Tranquility Positivity Passion333333333333333333333333333</p>
+				</section>
+				<section class="st-panel st-color" id="st-panel-4">
+					<div class="st-desc" data-icon="x"></div>
+					<h2>Serendipity</h2>
+					<p>Serendipity Happiness Tranquility Positivity Passion444444444444444444444444444</p>
+				</section>
+				<section class="st-panel" id="st-panel-5">
+					<div class="st-desc" data-icon="c"></div>
+					<h2>Serendipity</h2>
+					<p>Serendipity Happiness Tranquility Positivity Passion555555555555555555555555555</p>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
