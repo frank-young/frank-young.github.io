@@ -6,6 +6,7 @@ html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
   font-family: '微软雅黑';
+  line-height: 1.63;
 }
 body {
   padding-top: 70px;
@@ -85,7 +86,15 @@ footer {
   }
   .jumbotron .h1, .jumbotron h1 {
     font-size: 40px;
-}
+  }
+  /*  详情页
+ * --------------------------------------------------
+ * */
+ 
+ .note-content{
+   margin-left:50px;  
+   margin-right:50px;  
+ }
 
 }
 
@@ -108,3 +117,7 @@ footer {
 /*  字体
  * --------------------------------------------------
  * */
+.panel-body .label{
+    display: inline-block;
+    margin-bottom: 8px;
+ }
