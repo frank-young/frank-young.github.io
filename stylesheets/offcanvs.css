@@ -63,6 +63,9 @@ footer {
 /*    jumbotron
  * --------------------------------------------------
  * */
+ .jumbotron {
+    padding: 25px 18px ;
+  }
 .jumbotron >h1 >span{
   color:deepskyblue;
 }
@@ -70,9 +73,20 @@ footer {
   color:deepskyblue;
 }
 @media screen and (min-width: 767px){
+  /*nav menu 的一些配置 ,这里只配置了宽屏情况下*/
   #navcon{ 
     margin-left: 50px;
   }
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: #00BFFF;
+  }
+  .navbar-nav>li i {
+    font-size: 18px;
+  }
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 40px;
+}
+
 }
 
 /*  dome img:hover;
@@ -90,3 +104,7 @@ footer {
 .border-hover>div{
     min-height: 500px;
   }
+
+/*  字体
+ * --------------------------------------------------
+ * */

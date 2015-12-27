@@ -9,6 +9,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
 	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="stylesheets/offcanvs.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!--[if lt IE 9]>
 	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -19,19 +20,16 @@
 	<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 					<span class="sr-only">Frank young</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-
 				<a href="index.html" class="navbar-brand">
 					<span>Frank Young</span>
 				</a>
 			</div>
-
 			<!-- 顶部导航 -->
 			<div class="collapse navbar-collapse navbar-responsive-collapse " id="fy_nav">
 				<ul class="nav navbar-nav"  id="navcon">
@@ -41,7 +39,7 @@
 					<li>
 						<a href="font.html" >前端</a>
 					</li>
-					<li class="dropdown" >
+					<li class="dropdown active" >
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
 							服务端
 							<span class="caret"></span>
@@ -59,7 +57,7 @@
 						</ul>
 					</li>
 					
-					<li class="active">
+					<li >
 						<a href="about.html">关于我</a>
 					</li>
 					<li>
@@ -78,26 +76,42 @@
 	<div class="container">
 
 		<div class="row row-offcanvas row-offcanvas-right">
-
+		
 			<div class="col-xs-12 col-sm-9">
 				<p class="pull-right visible-xs">
 					<button type="button" class="btn btn-info btn-xs" data-toggle="offcanvas">Right ></button>
 				</p>
+				<!-- 显示幕 -->
 				<div class="jumbotron">
 					<h1>
-						一个关于
-						<span>坚持</span> 的理想主义者
+						<span>Python</span>相关
 					</h1>
-					<p class="text-right">— Frank Young</p>
+					<p>基于兴趣的python爬虫实战</p>
 				</div>
+				<!--./显示幕-->
 				<div class="row">
 					<div class="col-sm-12 blog-main">
-						
+
+						<div class="blog-post">
+							<h2 class="blog-post-title"></h2>
+							<p class="blog-post-meta">
+								2015-06-06
+								<span class="label label-default">python</span>
+								
+							</p>
+							<p style="text-indent: 2em;">
+								
+							</p>
+							<p>
+								<a class="btn btn-success" href="detail/detail1.html" role="button">查看详情 »</a>
+							</p>
+							<hr></div>
+						<!-- /.blog-post -->
 					</div>
 				</div>
 				<!--/row-->
 			</div>
-			<!--/.col-xs-12.col-sm-9-->
+			
 
 			<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
 				<div class="list-group">
@@ -127,18 +141,14 @@
 	<script src="javascripts/jquery-2.1.4.min.js"></script>
 	<script src="javascripts/bootstrap.min.js"></script>
 	<script type="text/javascript">
-			$(document).ready(function () {
-  $('[data-toggle="offcanvas"]').click(function () {
-    $('.row-offcanvas').toggleClass('active')
-  });
-});
-		</script>
-	<script>
-  $(function(){
-    $("ul li ").click(function(){
-        $(this).addClass("active").siblings().removeClass("active");
-    });
-  });
+		  $(function(){
+		  	$('[data-toggle="offcanvas"]').click(function () {
+			    $('.row-offcanvas').toggleClass('active')
+			  });
+		    $("ul li ").click(function(){
+		        $(this).addClass("active").siblings().removeClass("active");
+		    });
+		  });
   </script>
 </body>
 
